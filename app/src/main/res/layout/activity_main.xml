@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="com.example.tcgongonmac.tachakarn_midterm.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/midterm"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/midterm"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mideterm Exam is Fun!"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/midterm"
+        android:layout_marginTop="70dp"
+        android:rotation="45"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mideterm Exam is Fun!"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/midterm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:rotation="-45"
+        android:textSize="20dp"/>
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/web_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/text2"
+        android:layout_above="@+id/start"
+        ></WebView>
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start!"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:drawableLeft="@drawable/start_button"
+        android:onClick="onStart"
+        />
+
+
+
+</RelativeLayout>
+
+
